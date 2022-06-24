@@ -4,184 +4,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desarrollo Web Fullstack</title>
-    
+    <title>Bussiness</title>
+
     <style>
         body {
-            margin:0px;
+            margin:0px;/*espacio exterior con respecto al borde del elemento*/
         }
-
-        table {
-            border: 2px solid black;
-            max-width:700px;
-        }
-
-        img {
-            cursor:pointer;
-        }
-
-        a {
-        }
-
-        
-        .boton-navegador {
-            padding:10px;
-            margin:0px;
-            color: white;
-            text-decoration:none;
-            align-self: center;
-        }
-
-        .boton-navegador:hover{
-            background-color: pink;
-            color:green;
-        }
-        
-        nav {
-            background-color:#2e2f72;
+        nav{
+            background-color: #155bd5;
+            text-align:center;/*alineado del texto*/
+            padding: 20px;/*espacio interior con respecto al borde del elemento*/
             display: flex;
         }
-        .logo-nav{
-            max-height: 30px;
-            margin: 10px;
+        .nav-button{
+            color:#e2f1ff;
+            text-decoration: none;/*saco subrayado de la etiqueta <a>*/
+            font-size: 20px;/*tamaño de la fuente*/
+            font-family: sans-serif;/*fuente*/
+            padding: 10px;
         }
-        .nav-buttons-container{
-            display:contents;
+        .nav-logo{
+            margin-right:100px;/*margen derecho*/
         }
-
-        section{
-            border:5px solid black;
+        .align-middle{
+            align-self: center;/*alinear elemento al centro verticalmente*/
         }
-
-        .div-tarjeta{
-            border:5px solid green;
-            text-align: center;
-            height: 100%;
+        .section-azul{
+            padding:20px;
+            background-color: #155bd5;
         }
-        .div-tarjeta:hover{
-            background-color:red;
+        .section-gris{
+            padding:20px;
+            background-color: #e1e1e1;
         }
-        /*
-        #btn-html{
-            background-color: red;
+        .section-blanco{
+            padding:20px;
+            background-color: white;
         }
-        */
     </style>
 </head>
 <body>
 
-    <!-- navegacion -->
     <nav>
-        <img class="logo-nav" src="img/logo-horizontal.png" alt="charsoftnet">
-        <div class="nav-buttons-container">
-            <a id="btn-html" class="boton-navegador" href="html.html">HTML</a>
-            <a class="boton-navegador" href="css.html">CSS</a>
-            <a class="boton-navegador" href="javascript.html">Javascript</a>
+        <img class="nav-logo" src="img/white-logo.svg" alt="logo">
+        <div class="align-middle">            
+            <a class="nav-button" href=""> Home </a>
+            <a class="nav-button" href=""> Service </a>
+            <a class="nav-button" href=""> Portfolio </a>
+            <a class="nav-button" href=""> Pricing </a>
+            <a class="nav-button" href=""> Team </a>
+            <a class="nav-button" href=""> Contact </a>
         </div>
     </nav>
-    <!-- navegacion fin -->
 
+    <section class="section-azul">
 
-
-
-    <section style="display:flex;">
-        <a href="#">
-            <div class="div-tarjeta">
-                <img src="img/html.png" alt="Imágen de HTML">
-                <p style="text-align:justify;">
-                    El Lenguaje de Marcado de Hipertexto (HTML) es el código que se utiliza para estructurar y desplegar una página web y sus contenidos. Por ejemplo, sus contenidos podrían ser párrafos, una lista con viñetas, o imágenes y tablas de datos.
-                </p>
-            </div>
-        </a>
-
-        <a href="#">
-            <div class="div-tarjeta">
-                <img src="img/css.png" alt="Imágen de css">
-                <p style="text-align:justify;">
-                    Hojas de Estilo en Cascada (del inglés Cascading Style Sheets) o CSS es el lenguaje de estilos utilizado para describir la presentación de documentos HTML o XML (en-US) (incluyendo varios languages basados en XML como SVG, MathML o XHTML). CSS describe como debe ser renderizado el elemento estructurado en la pantalla, en papel, en el habla o en otros medios.
-                </p>
-            </div>
-        </a>
-
-        <a href="#">
-            <div class="div-tarjeta">
-                <img src="img/javascript.png" alt="Imágen de javascript">
-                <p style="text-align:justify;">
-                    JavaScript (abreviado comúnmente JS) es un lenguaje de programación interpretado, dialecto del estándar ECMAScript. Se define como orientado a objetos,2​ basado en prototipos, imperativo, débilmente tipado y dinámico. 
-                </p>                    
-            </div>
-        </a>
     </section>
 
-    <section>
-        seccion 2
+    <section class="section-gris">
+
     </section>
 
-    <section>
-        seccion 3
+    <section class="section-blanco">
+
     </section>
 
+    <section class="section-gris">
 
+    </section>
 
+    <section class="section-blanco">
 
-    <h1>Desarrollo Web Fullstack</h1>
-
-
-    <table>
-        <thead>
-            <th style="border: 2px solid black;">imagen</th>
-            <th style="border: 2px solid black;">párrafo</th>
-        </thead>
-
-        <tbody>
-            <tr>
-                <td style="border: 2px solid black;">                    
-                    <a href="html.html">
-                        <img src="img/html.png" alt="Imágen de HTML">
-                    </a>
-                </td>
-                <td style="border: 2px solid black;">
-                    <p>
-                        El Lenguaje de Marcado de Hipertexto (HTML) es el código que se utiliza para estructurar y desplegar una página web y sus contenidos. Por ejemplo, sus contenidos podrían ser párrafos, una lista con viñetas, o imágenes y tablas de datos.
-                    </p>
-                </td>
-            </tr>
-
-            <tr>
-                <td style="border: 2px solid black;">
-                    <a href="css.html">
-                        <img src="img/css.png" alt="Imágen de css">
-                    </a>                    
-                </td>
-                <td style="border: 2px solid black;">
-                    <p>
-                        Hojas de Estilo en Cascada (del inglés Cascading Style Sheets) o CSS es el lenguaje de estilos utilizado para describir la presentación de documentos HTML o XML (en-US) (incluyendo varios languages basados en XML como SVG, MathML o XHTML). CSS describe como debe ser renderizado el elemento estructurado en la pantalla, en papel, en el habla o en otros medios.
-                    </p>
-                </td>
-            </tr>
-
-            <tr>
-                <td style="border: 2px solid black;">
-
-
-
-
-
-                    <a href="javascript.html">
-                        <img src="img/javascript.png" alt="Imágen de javascript">
-                    </a>                    
-                </td>
-                <td style="border: 2px solid black;">
-                    <p>
-                        JavaScript (abreviado comúnmente JS) es un lenguaje de programación interpretado, dialecto del estándar ECMAScript. Se define como orientado a objetos,2​ basado en prototipos, imperativo, débilmente tipado y dinámico. 
-                    </p>                    
-                </td>
-            </tr>            
-        </tbody>
-    </table>
-
-    <footer>
-        Charsoftnet 2022
-    </footer>
+    </section>
+    
 </body>
 </html>
