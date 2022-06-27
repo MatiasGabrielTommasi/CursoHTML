@@ -7,6 +7,10 @@
     <title>Bussiness</title>
 
     <style>
+        *{
+            font-family: sans-serif;
+        }
+
         body {
             margin:0px;/*espacio exterior con respecto al borde del elemento*/
         }
@@ -20,7 +24,6 @@
             color:#e2f1ff;
             text-decoration: none;/*saco subrayado de la etiqueta <a>*/
             font-size: 20px;/*tamaño de la fuente*/
-            font-family: sans-serif;/*fuente*/
             padding: 10px;
         }
         .nav-logo{
@@ -41,6 +44,25 @@
             padding:20px;
             background-color: white;
         }
+
+        section{            
+            padding-left: 10% !important;
+            padding-right: 10% !important;
+            height: 100vh;/*vh = viewport height // vw = viewport width*/
+        }
+
+        .boton-get-started{
+            text-decoration: none;
+            border: 2px solid white;
+            border-radius: 5px;
+            color: #155bd5;
+            padding: 10px;
+            background-color: white;
+        }
+        .boton-get-started:hover{
+            color:white;
+            background-color: #155bd5;
+        }
     </style>
 </head>
 <body>
@@ -57,7 +79,18 @@
         </div>
     </nav>
 
-    <section class="section-azul">
+    <section class="section-azul" style="display:flex;">
+
+        <div id="texto1" style="width:50%;padding-right:10px;align-self:center;color:white">
+            <h1>Corporate & Business Site Template by Ayro UI.</h1>
+            <p>We are a digital agency that helps brands to achieve their business outcomes. We see technology as a tool to create amazing things. </p>
+            
+            <a href="#" class="boton-get-started">GET STARTED</a>
+        </div>
+
+        <div id="imagen1" style="width:50%;align-self: center;">
+            <img src="img/seccion1.jpg" style="border-radius:10px;width: 100%;" alt="">
+        </div>
 
     </section>
 
