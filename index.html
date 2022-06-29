@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bussiness</title>
+    <style>
 
+    </style>
     <style>
         *{
             font-family: sans-serif;
@@ -28,6 +30,7 @@
         }
         .nav-logo{
             margin-right:100px;/*margen derecho*/
+            max-height: 50px;
         }
         .align-middle{
             align-self: center;/*alinear elemento al centro verticalmente*/
@@ -63,9 +66,43 @@
             color:white;
             background-color: #155bd5;
         }
+        .imagen-section {
+            border-radius:10px;
+            width: 100%;
+        }
+
+        .boton {
+            padding:20px;
+            border-radius: 10px;
+            border: 2px solid #9e9e9e;
+            text-decoration: none;
+            color:#393939
+        }
+        .boton:hover{
+            color:#155bd5;
+            border:2px solid #155bd5;
+        }
+
+        .boton-azul{
+            background-color: #155bd5;
+            color: white;
+        }
+        .boton-azul:hover{
+            background-color: transparent;
+            color: #155bd5;
+        }
+
+        .w-100 {
+            width: 100%;
+        }
+        .w-50 {
+            width: 50%;
+        }
     </style>
 </head>
 <body>
+
+
 
     <nav>
         <img class="nav-logo" src="img/white-logo.svg" alt="logo">
@@ -89,12 +126,32 @@
         </div>
 
         <div id="imagen1" style="width:50%;align-self: center;">
-            <img src="img/seccion1.jpg" style="border-radius:10px;width: 100%;" alt="">
+            <img class="imagen-section" src="img/seccion1.jpg" alt="">
         </div>
 
     </section>
 
-    <section class="section-gris">
+    <section class="section-gris" style="display:flex;">
+
+        <div class="align-middle" id="imagen-2" style="width:50%;align-self: center;">
+            <img class="imagen-section" src="img/seccion2.jpg" alt="">
+        </div>
+
+        <div class="align-middle w-50" id="texto-2" style="padding-left:20px;">
+            <small> - OUR STORY</small>
+            <h1>Our team comes with the experience and knowledge</h1>
+
+            <div style="padding:40px;background-color: #a4a4a4;border-radius: 10px;">
+                <a class="boton boton-azul" href="">Who we are</a>
+                <a class="boton" href="">Our vision</a>
+                <a class="boton" href="">Our history</a>
+            </div>
+
+            <div class="w-100">
+                <p class="w-100">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, look like readable English.</p>
+                <p class="w-100">There are many variations of passages of Lorem Ipsum available, but the majority have in some form, by injected humour.</p>
+            </div>
+        </div>
 
     </section>
 
