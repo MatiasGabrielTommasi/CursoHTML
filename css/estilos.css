@@ -114,3 +114,22 @@ section{
     color: #155bd5;
     font-size: 50px;
 }
+
+.boton-video:hover{
+    opacity: .8;
+}
+
+.icono-menu{
+    border-radius: 30px;
+    color:white;
+    border:solid 2px white;
+    padding:20px;
+    margin-right: 0px;
+    margin-left: auto;
+}
+
+@media (max-width: 600px){
+    .icono-menu{
+        background-color: pink;
+    }   
+}
